@@ -1,0 +1,47 @@
+from setuptools import setup, find_packages
+
+reqs = [
+    "h5py",
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pillow",
+    "scipy==1.2.1",
+    "scikit-learn",
+    "yaml",
+    "imageio",
+    "tensorflow",
+    "keras",
+    "pydot"
+]
+
+conda_reqs = [
+    "h5py",
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pillow",
+    "scipy==1.2.1",
+    "scikit-learn",
+    "yaml",
+    "imageio",
+    "tensorflow",
+    "keras",
+    "pydot"
+]
+
+test_pkgs = []
+
+setup(
+    name="geoimages",
+    python_requires='>3.4',
+    description="aws case studies",
+    url="https://github.com/neumj/awsint",
+    install_requires=reqs,
+    conda_install_requires=conda_reqs,
+    test_requires=test_pkgs,
+    packages=find_packages(),
+    include_package_data=True
+)

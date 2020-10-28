@@ -1,0 +1,19 @@
+name: geo-images
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.7
+  - h5py
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - pillow
+  - scipy=1.2.1
+  - scikit-learn
+  - yaml
+  - imageio
+  - tensorflow
+  - keras
+  - pydot

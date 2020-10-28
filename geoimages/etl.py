@@ -128,7 +128,7 @@ class Images():
                 im = self.read_image(source_file)
                 for r in rots:
                     rot_file = self.images_path + os.sep + sd + os.sep \
-                               + f.split('.')[0] + '_' + str(r) + '.' + f.split('.')[1]
+                               + f.split('.')[0] + '.' + str(r) + '.' + f.split('.')[1] + '.jpg'
                     im_rot = ndimage.rotate(im, r)
                     imageio.imwrite(rot_file, im_rot)
 

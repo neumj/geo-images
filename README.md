@@ -1,7 +1,7 @@
 # geoimages
 Package developed for machine learning proofs of concept for a geotechnical imaging firm.
 
-## Development and Use
+## Use and Development
 ### Create Conda environment:
 > $ conda env create -f environment.yml 
 

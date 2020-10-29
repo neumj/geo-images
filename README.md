@@ -30,9 +30,9 @@ Package developed for machine learning proofs of concept for a geotechnical imag
 Two models were developed to aid and speed identification of distinguishing features and patterns in a set of geological imagery. Using an unsupervised machine learning approach and, separately, a vector-distance/ similarity approach, the models successfully identified target images such that targets were most similar to a single input candidate image. Both models yielded similar results, with some overlap in the returned target-image sets. Both the K-Means unsupervised machine learning approach and the vector-distance/ similarity approach had similar elapsed times for prediction. Fitting each model took less than a minute, with a training-set of approximately one-hundred thousand images. However, elapsed time for training the K-Means model was significantly higher than the vector-distance/ similarity approach and may present limitations as the training data scales. A/B testing was recommended to determine which model returns more valuable results.
 
 ***Methodology:***
-> Supervised machine learning process 
+> Supervised Machine Learning Process 
 
-> Unsupervised machine learning process 
+> Unsupervised Machine Learning Process     
 > *Extract, Transform, Load*  
 > * Unzip geological_similarity.zip in images directory using ETL Class unzip_images() method.
 >* Randomly sample images for development and testing purposes using ETL Class sample_images() method.

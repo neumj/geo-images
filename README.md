@@ -73,9 +73,3 @@ Predict Target Images with Vector-distance/ similarity Model
 
         Identify similar target images to candidate image using the PairwiseModel Class predict() method.
         Visualize target images using the Plots Class plot_matches() method.
-
-Source Code:
-
-    Source code below and available as an installable package at: https://github.com/neumj/awsint
-    Viewable report available at: http://proodicals.com/geo_sim/geological_similarity.html
-

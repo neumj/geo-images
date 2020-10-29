@@ -33,7 +33,7 @@ Two models were developed to aid and speed identification of distinguishing feat
 > Supervised Machine Learning Process 
 
 > Unsupervised Machine Learning Process     
-> [*Extract, Transform, Load*](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_similarity.ipynb)  
+> [Extract, Transform, Load](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_similarity.ipynb)  
 > * Unzip geological_similarity.zip in images directory using ETL Class unzip_images() method.
 > * Randomly sample images for development and testing purposes using ETL Class sample_images() method.
 > * Augment remaining training data by creating additional training examples via image rotation using ETL Class rotate_images() method.
@@ -44,27 +44,14 @@ Two models were developed to aid and speed identification of distinguishing feat
 > * Optimize model hyperparameter to the training set by calculating estimator inertia for a range of cluster numbers using KMmeansModel Class model_inertias() method.
 > * Visualize inertias using the Plots Class elbow_plot() method.
 > * Set the optimal number of clusters as the default based on the Elbow plot.
-
-Fit K-Means Model
-
-        Fit the K-Means model using the training data and the KMeansModel Class fit() method.
-
-Fit Vector-distance/ similarity Model
-
-        Fit the vector-distance/ similarity model using the training data and the PairwiseModel Class fit() method.
-
-Load Candidate Image
-
-        Load candidate image using the ETL Class read_image() method.
-        Visualize candidate image.
-        Vectorize candidate image for prediction using the ETL Class flatten_image() method.
-
-Predict Target Images with K-Means Model
-
-        Identify similar target images to candiate image using the KMeansModel Class predict() method.
-        Visualize target images using the Plots Class plot_matches() method.
-
-Predict Target Images with Vector-distance/ similarity Model
-
-        Identify similar target images to candidate image using the PairwiseModel Class predict() method.
-        Visualize target images using the Plots Class plot_matches() method.
+>
+> [Fit Image Similarity Model, Predict](https://github.com/neumj/geo-images/blob/master/notebooks/train_predict_image_similarity.ipynb)
+> * Fit the K-Means model using the training data and the KMeansModel Class fit() method.
+> * Fit the vector-distance/ similarity model using the training data and the PairwiseModel Class fit() method.
+> * Load candidate image using the ETL Class read_image() method.
+> * Visualize candidate image.
+> * Vectorize candidate image for prediction using the ETL Class flatten_image() method.
+> * Identify similar target images to candiate image using the KMeansModel Class predict() method.
+> * Visualize target images using the Plots Class plot_matches() method.
+> * Identify similar target images to candidate image using the PairwiseModel Class predict() method.
+> * Visualize target images using the Plots Class plot_matches() method.

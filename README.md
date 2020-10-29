@@ -39,12 +39,11 @@ Two models were developed to aid and speed identification of distinguishing feat
 > * Augment remaining training data by creating additional training examples via image rotation using ETL Class rotate_images() method.
 > * Generate image metadata for all images using ETL Class generate_image_metadata() method.
 > * Convert images to vectors for model training and store in m by n dimensional array using ETL Class images_to_vectors_df() method.
-
-Optimize K-Means Model
-
-        Optimize model hyperparameter to the training set by calculating estimator inertia for a range of cluster numbers using KMmeansModel Class model_inertias() method.
-        Visualize inertias using the Plots Class elbow_plot() method.
-        Set the optimal number of clusters as the default based on the Elbow plot.
+>
+> [Optimize K-Means Model](https://github.com/neumj/geo-images/blob/master/notebooks/dev_kmeans_image_similarity.ipynb)
+> * Optimize model hyperparameter to the training set by calculating estimator inertia for a range of cluster numbers using KMmeansModel Class model_inertias() method.
+> * Visualize inertias using the Plots Class elbow_plot() method.
+> * Set the optimal number of clusters as the default based on the Elbow plot.
 
 Fit K-Means Model
 

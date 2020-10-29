@@ -10,21 +10,28 @@ Package developed for machine learning proofs of concept for a geotechnical imag
 > $ pip install -e . --no-deps
 
 ## Summary  
-**Machine Learning Accelerates Identification of Priority Geological Images**
+***Machine Learning Accelerates Identification of Priority Geological Images***  
     
-Two models were developed to aid and speed identification of distinguishing features and patterns in a set of geological imagery. Using an unsupervised machine learning approach and, separately, a vector-distance/ similarity approach, the models successfully identified target images such that targets were most similar to a single input candidate image. Both models yielded similar results, with some overlap in the returned target-image sets. Both the K-Means unsupervised machine learning approach and the vector-distance/ similarity approach had similar elapsed times for prediction. Fitting each model took less than a minute, with a training-set of approximately one-hundred thousand images. However, elapsed time for training the K-Means model was significantly higher than the vector-distance/ similarity approach and may present limitations as the training data scales. A/B testing with the customer is recommended to determine which model returns more valuable results. Addition recommendations include discussion with the customer focussed on the necessity and feasibility to label features within the images to enable development of a supervised machine learning approach that may yield more relevant or diagnostic returns.
+**Need:** A geotechnical consulting company needed a process to aid and speed identification of various igneous, metamorphic, and sedimentary rocks, and interesting features and patterns in their collection of geotechnical imagery data.
 
-Need: A geotechnical consulting company needed a tool to aid and speed identification of interesting features and patterns in their imagery data.
+**Approach:**  
+* Supervised machine learing to classify images as either
+* Unsupervised machine learning to identify images simnilar to a candidate image that contained an interesing feature or pattern.
 
-Requirements:    
+**Requirements:**      
 * Identify target images that are similar to a single candidate image.
 * Score target images such that targets are most similar to the candidate image.
 * Return n-target images based on defined input.
 
-Approach:
-
     Because the images lacked wholesale labels or labels for specific features within the images, an unsupervised machine learning approach was appropriate.
     In addition to an unsupervised machine learning apparoch, the requirements could also be met via vector-distance/ similarity methods. This approach was also tested.
+
+
+
+Two models were developed to aid and speed identification of distinguishing features and patterns in a set of geological imagery. Using an unsupervised machine learning approach and, separately, a vector-distance/ similarity approach, the models successfully identified target images such that targets were most similar to a single input candidate image. Both models yielded similar results, with some overlap in the returned target-image sets. Both the K-Means unsupervised machine learning approach and the vector-distance/ similarity approach had similar elapsed times for prediction. Fitting each model took less than a minute, with a training-set of approximately one-hundred thousand images. However, elapsed time for training the K-Means model was significantly higher than the vector-distance/ similarity approach and may present limitations as the training data scales. A/B testing with the customer is recommended to determine which model returns more valuable results. Addition recommendations include discussion with the customer focussed on the necessity and feasibility to label features within the images to enable development of a supervised machine learning approach that may yield more relevant or diagnostic returns.
+
+
+
 
 Methodology:
 

@@ -128,7 +128,7 @@ class Images():
                 im = self.read_image(source_file)
                 for r in rots:
                     rot_file = self.images_path + os.sep + sd + os.sep \
-                               + f.split('.')[0] + '_' + str(r) + '.' + f.split('.')[1]
+                               + f.split('.')[0] + '.' + f.split('.')[1] + '.' + str(r) + '.jpg'
                     im_rot = ndimage.rotate(im, r)
                     imageio.imwrite(rot_file, im_rot)
 
@@ -194,7 +194,11 @@ class Images():
             if len(files) > 1:
                 for f in files:
                     im = imageio.imread(root + os.sep + f)
-                    img_key = f.split('.')[0] + '.' + f.split('.')[1]
+                    fsegs = f.split('.')
+                    if len(fsegs) == 3:
+                        img_key = f.split('.')[0] + '.' + f.split('.')[1]
+                    else:
+                        img_key = f.split('.')[0] + '.' + f.split('.')[1] + '.' + f.split('.')[2]
                     self.images_meta_data['images'].update({img_key: {'file_name': f, 'root': root,
                                                                       'file_path': root + os.sep + f,
                                                                       'size': im.shape}})

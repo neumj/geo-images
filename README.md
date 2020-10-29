@@ -32,10 +32,19 @@ Two models were developed to aid and speed identification of distinguishing feat
 
 ***Methodology:***
 > Supervised Machine Learning Process 
+> [Extract, Transform, Load](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_classification.ipynb)  
+> * Unzip geotechnical_images.zip in images directory using Images Class unzip_images() method.
+> * Randomly sample images for training, development, and testing purposes using Images Class sample_images() method.
+> * Generate image metadata for training, development, and testing images using Images Class generate_image_metadata() method.
+> * Convert images and labels for model training, development, and testing using Images Class images_to_x_y() method.
+> * Save X, Y data as *.h5* file.
+>
+> [Train and Evaluate Image Classification Models](https://github.com/neumj/geo-images/blob/master/notebooks/train_image_classification.ipynb)
+
 
 > Unsupervised Machine Learning Process     
 > [Extract, Transform, Load](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_similarity.ipynb)  
-> * Unzip geological_similarity.zip in images directory using Images Class unzip_images() method.
+> * Unzip geotechnical_images.zip in images directory using Images Class unzip_images() method.
 > * Randomly sample images for development and testing purposes using Images Class sample_images() method.
 > * Augment remaining training data by creating additional training examples via image rotation using Images Class rotate_images() method.
 > * Generate image metadata for all images using Images Class generate_image_metadata() method.

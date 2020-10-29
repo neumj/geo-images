@@ -37,8 +37,8 @@ test_pkgs = []
 setup(
     name="geoimages",
     python_requires='>3.4',
-    description="aws case studies",
-    url="https://github.com/neumj/awsint",
+    description="ML for geotechnical consulting firm.",
+    url="https://github.com/neumj/geo-images",
     install_requires=reqs,
     conda_install_requires=conda_reqs,
     test_requires=test_pkgs,

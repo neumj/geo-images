@@ -33,12 +33,12 @@ Two models were developed to aid and speed identification of distinguishing feat
 > Supervised Machine Learning Process 
 
 > Unsupervised Machine Learning Process     
-> *Extract, Transform, Load*  
+> [*Extract, Transform, Load*](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_similarity.ipynb)  
 > * Unzip geological_similarity.zip in images directory using ETL Class unzip_images() method.
->* Randomly sample images for development and testing purposes using ETL Class sample_images() method.
-        Augment remaining training data by creating additional training examples via image rotation using ETL Class rotate_images() method.
-        Generate image metadata for all images using ETL Class generate_image_metadata() method.
-        Convert images to vectors for model training and store in m by n dimensional array using ETL Class images_to_vectors_df() method.
+> * Randomly sample images for development and testing purposes using ETL Class sample_images() method.
+> * Augment remaining training data by creating additional training examples via image rotation using ETL Class rotate_images() method.
+> * Generate image metadata for all images using ETL Class generate_image_metadata() method.
+> * Convert images to vectors for model training and store in m by n dimensional array using ETL Class images_to_vectors_df() method.
 
 Optimize K-Means Model
 

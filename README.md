@@ -31,7 +31,7 @@ A convolutional network was developed using approximately 21,000 training images
 Two models were developed to aid and speed identification of distinguishing features and patterns in a set of geological imagery. Using an unsupervised machine learning approach and, separately, a vector-distance/ similarity approach, the models successfully identified target images such that targets were most similar to a single input candidate image. Both models yielded similar results, with some overlap in the returned target-image sets. Both the K-Means unsupervised machine learning approach and the vector-distance/ similarity approach had similar elapsed times for prediction. Fitting each model took less than a minute, with a training-set of approximately one-hundred thousand images. However, elapsed time for training the K-Means model was significantly higher than the vector-distance/ similarity approach and may present limitations as the training data scales. A/B testing was recommended to determine which model returns more valuable results.
 
 ***Methodology:***
-> Supervised Machine Learning Process 
+> Supervised Machine Learning Process     
 > [Extract, Transform, Load](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_classification.ipynb)  
 > * Unzip geotechnical_images.zip in images directory using Images Class unzip_images() method.
 > * Randomly sample images for training, development, and testing purposes using Images Class sample_images() method.

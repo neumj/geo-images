@@ -32,8 +32,8 @@ Two models were developed to aid and speed identification of distinguishing feat
 ***Methodology:***
 > Supervised machine learning process 
 
-
-Extract, Transform, Load
+> Unsupervised machine learning process 
+>> Extract, Transform, Load
 
         Unzip geological_similarity.zip in images directory using ETL Class unzip_images() method.
         Randomly sample images for development and testing purposes using ETL Class sample_images() method.

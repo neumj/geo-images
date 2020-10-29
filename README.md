@@ -15,8 +15,8 @@ Package developed for machine learning proofs of concept for a geotechnical imag
 ***Need:*** A geotechnical consulting company needed a process to aid and speed identification of various igneous, metamorphic, and sedimentary rocks, and interesting features and patterns in their collection of geotechnical imagery data.
 
 ***Approach:***  
-* Supervised machine learing to classify images as either Andesite, Gneiss, Marble, Quartzite, Rhyolite, or Schist.
-* Unsupervised machine learning to identify images simnilar to a candidate image that contained an interesing feature or pattern.
+* Supervised machine learning to classify images as either Andesite, Gneiss, Marble, Quartzite, Rhyolite, or Schist.
+* Unsupervised machine learning to identify images similar to a candidate image that contained an interesting feature or pattern.
 
 ***Requirements:*** 
 * With greater than 90 percent accuracy, classify a candidate into 1 of 6 categories.
@@ -25,7 +25,8 @@ Package developed for machine learning proofs of concept for a geotechnical imag
 * Return n-target images based on defined input.
 
 ***Image Classification:***    
-A convolutional network was developed using approximately 21,000 training images to rapidly classify a geotichnical image as either Andesite, Gneiss, Marble, Quartzite, Rhyolite, or Schist.  Three architectures were evauated, 1-layer convolutional network, 2-layer convolutional network, and a modified VGGNet.  The 2-layer network achieved accuracy greater than 95 percent on a test set of approximately 3,500 images.    
+A convolutional network was developed using approximately 21,000 training images to rapidly classify a geotechnical image as either Andesite, Gneiss, Marble, Quartzite, Rhyolite, or Schist.  Three architectures were evaluated, 1-layer convolutional network, 2-layer convolutional network, and a modified VGGNet.  The 2-layer network achieved accuracy greater than 95 percent on a test set of approximately 3,500 images.    
+
 ![2-LayerConvNet](notebooks/assets/Conv2L.png)
 
 ***Image Similarity:***  
@@ -72,7 +73,7 @@ Two models were developed to aid and speed identification of distinguishing feat
 > * Load candidate image using the Images Class read_image() method.
 > * Visualize candidate image.
 > * Vectorize candidate image for prediction using the Images Class flatten_image() method.
-> * Identify similar target images to candiate image using the KMeansModel Class predict() method.
+> * Identify similar target images to candidate image using the KMeansModel Class predict() method.
 > * Visualize target images using the Plots Class plot_matches() method.
 > * Identify similar target images to candidate image using the PairwiseModel Class predict() method.
 > * Visualize target images using the Plots Class plot_matches() method.

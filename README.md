@@ -40,7 +40,17 @@ Two models were developed to aid and speed identification of distinguishing feat
 > * Save X, Y data as *.h5* file.
 >
 > [Train and Evaluate Image Classification Models](https://github.com/neumj/geo-images/blob/master/notebooks/train_image_classification.ipynb)
-
+> * Load training, development, and testing data.
+> * Normalize X_Train, X_Dev, X_Test.
+> * Convert Y data to one-hot encoding using Labels Class method categorical_to_onehot() method.
+> * Optimize hyperparameters for 1-Layer, 2-Layer, and smallVGGNet models.
+> * Evaluate 1-Layer, 2-Layer, and smallVGGNet models on test set.
+> * Save best performing model.
+>
+> [Image Classification, Predict](https://github.com/neumj/geo-images/blob/master/notebooks/predict_image_classification.ipynb)
+> * Load 2-layer model.
+> * Load candidate image.
+> * Predict classification.
 
 > Unsupervised Machine Learning Process     
 > [Extract, Transform, Load](https://github.com/neumj/geo-images/blob/master/notebooks/etl_image_similarity.ipynb)  

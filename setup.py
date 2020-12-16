@@ -13,7 +13,8 @@ reqs = [
     "imageio",
     "tensorflow",
     "keras",
-    "pydot"
+    "pydot",
+    "pytorch"
 ]
 
 conda_reqs = [
@@ -29,7 +30,8 @@ conda_reqs = [
     "imageio",
     "tensorflow",
     "keras",
-    "pydot"
+    "pydot",
+    "pytorch"
 ]
 
 test_pkgs = []
